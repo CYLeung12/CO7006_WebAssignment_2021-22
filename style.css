@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+body{
+    font-family: 'Akshar', sans-serif;
+    color: #3b3b3b;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.title{
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+
+#top-header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+#logo{
+    width: 300px;
+}
+
+
+.submitReceipe, .button{
+    position: relative;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 150px;
+    background: #Ffb1a0;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 1em;
+    border-bottom: #ff9b85 5px solid;
+    color: #262626;
+}
+
+.submitReceipe:hover {
+  border-bottom: #ff9b85 5px solid;
+  top: 1px;
+  background-color: #fffc5e;
+  transition: all .2s ease-out;
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+nav{
+    background-color: #Ffb1a0;  
+    height: 50px;
+  }
+
+nav a {
+    color: #3b3b3b;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: #Ffb1a0;
+    padding: 16px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+ }
+ 
+nav a:hover {
+    color: #070063;
+    background: #fffc5e;
+    font-weight: 600;
+ 
+ }
+ 
+
+ 
+nav ul {
+    background-color: #Ffb1a0;  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+ }
+ 
+ nav li {
+    flex: 5    ;
+ }
+
+/* End of Header & Nav */
+
+
+ #main-banner{
+     background: url(image/banner.jpg) center no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: calc(100vh - 204px); 
+    }
+
+
+
+
+#mealInspiration img {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10% 10% 0 0;
+    border-bottom: #Ffb1a0 10px solid;
+  }
+
+#intro{
+     display: flex;
+    justify-content:center;
+    position: relative;
+}
+
+#heroTitle{
+    position: absolute;
+    color: white;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 4px #262626;
+     margin-top: 200px;
+    
+}
+
+  #searchBox{
+  position: absolute;
+  display: flex;
+  width: 60%;
+  margin-top: 280px;
+  height: 50px;
+
+}
+
+#searchBox input{
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    border: white 2px solid;
+    border-left: white 20px solid;
+}
+
+#searchBox input:focus{
+    outline: 1px solid #Ffb1a0;
+}
+
+
+#searchButton{
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(to right, #fffc5e 50%,#Ffb1a0 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+}
+
+#searchButton:hover{
+    background-position: left bottom;
+    color: #070063;
+    border-left: 3px solid #Ffb1a0;
+
+}
+
+/* Start of footer */
+footer{
+    height: 50px;
+    width: 100%;
+    background: #262626;
+
+
+}
+
+#footerContent{
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    padding: 6px 0;
+}
+
+
+/* Start of CSS for index.html */
+#searchResult{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#searchTitle{
+    display: none;
+    margin: auto;
+    line-height: 300%;
+
+}
+
+.mealItem{
+    max-width: 30%;
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-bottom: 3em;
+    background-color: #ffd3ca;
+    border-radius: 3em;
+    margin: 1rem 1.5%;
+}
+
+.sMealImg img{
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10% 10% 0 0;
+    border-bottom: #Ffb1a0 10px solid;
+    margin-bottom: 1em;
+}
+.sMealButton{
+    position: relative;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 50%;
+    background: white;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 10em;
+    border-bottom: #Ffb1a0 5px solid;
+    color: #070063;
+}
+
+.sMealButton:hover {
+  border-bottom: #ff9b85 5px solid;
+  top: 1px;
+  background-color: #fffc5e;
+  transition: all .2s ease-out;
+}
+
+.sMealName>h3{
+    font-size: 1.5em;
+}
+
+.sMealName>h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.sMealDetails{
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    width: 80%;
+    height: 90%;
+    overflow-y:visible;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    background-color: #fffc5e;
+    box-shadow: #ff9b85 3px 3px;
+    display: none;
+}
+
+.sMealDerailsImg>img{
+    max-width: 20%;
+    margin: auto;
+    border-radius: 50%;
+    border-bottom: #Ffb1a0 5px solid;
+    margin-bottom: 0.5em;
+}
+
+.sMealDetailsName{
+    font-size: 1.5em;
+}
+
+.sMealDetailsCat{
+    font-weight: 600;
+    color: #535353;
+}
+.sMealDetailsIns{
+    line-height: 150%;
+    margin-top: 1rem;
+}
+
+#sCloseDetail{
+    background-color: white;
+    border: #ff9b85 1px solid;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    color: #262626;
+    position: absolute;
+    right: 3em;
+    cursor: pointer;
+}
+
+#sCloseDetail:hover{
+    background-color: #Ffb1a0;
+}
+
+.sMealDetailsVideo{
+    position: relative;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 20%;
+    background: white;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 10em;
+    border-bottom: #Ffb1a0 5px solid;
+    color: #070063;
+
+}
+
+
+.sMealDetailsVideo:hover {
+  border-bottom: #ff9b85 5px solid;
+  top: 1px;
+  background-color: #ffd3ca;
+  transition: all .2s ease-out;
+}
+
+/* start of CSS for inspiration.html */
+
+#insBanner{
+    background: url(image/banner.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+   
+}
+
+#mealInspiration{
+    padding-top: 20px;
+}
+
+#mealInspiration h3{
+    font-size: 1.5em;
+    padding: 8px 0;
+}
+
+#mealInspiration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+
+#mealInspiration>div {
+    max-width: 45%;
+    text-align: center;
+    padding: 0 10 20px 0;
+    margin-bottom: 3em;
+    background-color: #ffd3ca;
+    border-radius: 5em
+  }
+
+  #mealInspiration>div>p{
+      margin: 0 25px;
+  } 
+
+  #mealInspiration>div>a {
+      position: relative;
+      text-decoration: none;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 30%;
+      background: white;
+      display: inline-block;
+      padding: 0.5em;
+      border-radius: 10em;
+      border-bottom: #Ffb1a0 5px solid;
+      color: #070063;
+  }
+
+  #mealInspiration>div>a:hover {
+    border-bottom: #ff9b85 5px solid;
+    top: 1px;
+    background-color: #fffc5e;
+    transition: all .2s ease-out;
+
+}
+
+#mealInspiration>div>p {
+    line-height: 150%;
+}
+
+.show{
+    display: block;
+}
+
+
+/* start of CSS for blog.php */
+
+
+#main-banner-s{
+    background: url(image/banner.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+#heroTitle-s{
+    position: absolute;
+    color: white;
+    font-size: 4.3em;
+    text-shadow: 3px 3px 4px #262626;
+    margin-top: 50px;
+}
+
+#heroTitle-intro{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 3px 3px 4px #262626;
+    margin-top: 145px;
+}
+
+#blog{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.post {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #535353;
+    margin: 40px 0;
+    
+}
+
+.blog-title{
+    background-color: #fffc5e;
+    border-bottom: #Ffb1a0 4px solid;
+    font-size: 1.7em;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 5px;
+}
+
+
+.blog-content{
+    padding: 30px 10px;
+    font-size: 1.3em;
+}
+
+/* start of CSS for contact.html */
+
+#contact{
+    padding: 40px 0;
+}
+#web-intro{
+    font-size:1.3em;
+    padding-bottom: 30px;
+}
+
+
+
+#contact th{
+    padding: 10px 50px;
+
+}
+
+ .address-info, .email-info{
+    border-bottom: #7a7a7a 1px solid;
+
+}
+
+#contact-info{
+    font-size:1.3em;
+}
+
+#contact-info{
+    border-spacing: 0;
+}
+
+/* start of CSS for form.html */
+
+
+#submitSection{
+    display: block;
+    height: calc(100vh - 204px); 
+    padding-bottom: 10px;
+}
+
+
+.generalForm{
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: #ff9b85 1px solid;
+    border-radius: 10px;
+
+}
+
+
+
+#submitMealName::placeholder{
+    color: rgb(55, 55, 55);
+    font-family:  'Akshar', sans-serif ;
+    font-size: 1.15em;
+}
+
+
+
+#submitMealInstruct::placeholder{
+    color: rgb(55, 55, 55);
+    font-family:  'Akshar', sans-serif ;
+    font-size: 1.15em;
+}
+
+#submitMealVideo::placeholder{
+    color: rgb(55, 55, 55);
+    font-family:  'Akshar', sans-serif ;
+    font-size: 1.15em;
+}
+
+#submitButton{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+#submited{
+    height: calc(100vh - 204px); 
+}
+#thankYou{
+    position: relative;
+    top: 20vh;
+    font-size: 1.4rem;
+}
+
+
+/* start of CSS for admin.php & adminReg.php */
+
+#admin-login>div, #admin-reg>div {
+    margin: 20px 0;
+}
+
+#admin-login input, #admin-reg input{
+    padding: 5px 10px;
+}
+
+#login-btn, #signup-btn {
+    background-color: #Ffb1a0;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: #ff9b85 1px solid;
+    cursor: pointer;
+}
+
+
+/* start of CSS for userSubmit.html */
+
+#submittedData{
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+#submittedData,  #submittedData tr,#submittedData th,#submittedData td{
+    border: #535353 solid 1px;
+}
+
+#submittedData td, #submittedData th{
+    padding: 10px;
+}
+
+#countryList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.country{
+    margin: 30px;
+    display: block;
+}
+
+.country p{
+    font-size: 3.4em;
+    line-height: 0.6em;
+}
+
+.country h2{
+    font-size: 1.7em;
+}
