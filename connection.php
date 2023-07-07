@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('54.36.230.123', 'cyleungh_RecipeWebsite', '0*6=&W=-rm64', 'cyleungh_RecipeWebsite');
+$conn = mysqli_connect($host, $username, $password, $database);
 if ($conn->connect_error) {
     echo ("DB connection failed ");
 }
