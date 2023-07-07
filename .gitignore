@@ -22,7 +22,4 @@
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
-blog.php
-insert.php
-login.php
-signup.php
+.DS_Store

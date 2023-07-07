@@ -23,7 +23,6 @@
         <h1 id="heroTitle-s" class="title">Inspiration for your Meals</h1>
         <p id="heroTitle-intro">Don't know what to cook today? See the following randam recipes for meal ideas!</p>
         <div id="main-banner-s">
-            <p style="color: white; float: right; top: 170px; position: relative;">(Banse, 2017)</p>
         </div>
 
 
@@ -45,13 +44,6 @@
             <p>
                 All recipe data is retrieved from <a href="https://www.themealdb.com/" target="_blank" style="color: aquamarine;">TheMealDB</a>.
             </p>
-            <ul>
-                <li style="font-size: 0.7em;">Banse, L. (2017). cooked dish on gray bowl photo. Unsplah. Avaliable at:
-                    https://unsplash.com/photos/-YHSwy6uqvk (Accessed: 4 May 2022).</li>
-                <li style="font-size: 0.7em;">TheMealDB (2016). TheMealDB API. Avaliable at:
-                    https://www.themealdb.com/api.php (Accessed: 10 May 2022).</li>
-
-            </ul>
 
         </div>
     </footer>

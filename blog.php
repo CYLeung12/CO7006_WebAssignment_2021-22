@@ -22,7 +22,7 @@
     <section id="intro">
         <h1 id="heroTitle-s" class="title">Cooking Tips</h1>
         <div id="main-banner-s">
-            <p style="color: white; float: right; top: 170px; position: relative;">(Banse, 2017)</p>
+        
         </div>
 
 
