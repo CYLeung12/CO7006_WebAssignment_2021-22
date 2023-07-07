@@ -67,9 +67,6 @@
 
     <footer>
         <div id="footerContent" class="container">
-            <p>
-                Website built for CO7006 - Web Systems
-            </p>
         </div>
     </footer>
 

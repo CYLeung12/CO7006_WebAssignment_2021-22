@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Taste the World | Recipes of World Cuisines</title>
 </head>
-
+        
 
 <body>
     <?php include('header.php') ?>
@@ -23,11 +23,10 @@
     <section id="intro">
         <h1 id="heroTitle-s" class="title">Contact Us</h1>
         <div id="main-banner-s">
-            <p style="color: white; float: right; top: 170px; position: relative;">(Banse, 2017)</p>
         </div>
     </section>
     <section id="contact" class="container">
-        <p id="web-intro">This is a website created for the assignment of CO7006 - Web Systems. It shares the recipes of
+        <p id="web-intro">This is a website sharing the recipes of
             meals from all
             around the world. The data of recipes is retrieved
             from a data source API built by <a href="https://www.themealdb.com/" target="_blank">TheMealDB</a>.</p>
@@ -70,10 +69,6 @@
 
     <footer>
         <div id="footerContent" class="container">
-            <ul>
-                <li style="font-size: 0.7em;">Banse, L. (2017). cooked dish on gray bowl photo. Unsplah. Avaliable at:
-                    https://unsplash.com/photos/-YHSwy6uqvk (Accessed: 4 May 2022).</li>
-            </ul>
         </div>
     </footer>
 

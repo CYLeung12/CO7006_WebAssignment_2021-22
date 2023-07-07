@@ -30,10 +30,7 @@
 
     <section id="blog">
         <?php
-        $conn = mysqli_connect('localhost', 'c2114907_admin', 'K3@onq%_;}A.', 'c2114907_meals');
-        if ($conn->connect_error) {
-            echo ("DB connection failed ");
-        }
+        require 'connection.php';
         $sql = "SELECT title, content FROM blog";
         $result = $conn->query($sql);
 
@@ -59,12 +56,6 @@
 
     <footer>
         <div id="footerContent" class="container">
-
-            <ul>
-                <li style="font-size: 0.7em;">Banse, L. (2017). cooked dish on gray bowl photo. Unsplah. Avaliable at:
-                    https://unsplash.com/photos/-YHSwy6uqvk (Accessed: 4 May 2022).</li>
-                <li style="font-size: 0.7em;">Delish (2020). 15 Cooking Tips That'll Change Every Home Cook's Life. Avaliable at: https://www.delish.com/kitchen-tools/kitchen-secrets/g25585978/best-cooking-tips/ (Accessed: 15 May 2022).</li>
-            </ul>
         </div>
     </footer>
 
