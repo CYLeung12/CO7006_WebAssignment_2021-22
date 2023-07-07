@@ -46,11 +46,8 @@ if (isset($_SESSION["login"])  !== TRUE) {
             </tr>
 
             <?php
-            $conn = mysqli_connect('localhost', 'c2114907_admin', 'K3@onq%_;}A.', 'c2114907_meals');
-            if ($conn->connect_error) {
-                echo ("DB connection failed ");
-            }
-            $sql = "SELECT id, submitMealName, submitMealInstruct, submitMealArea, submitMealVideo FROM submit";
+            require 'connection.php';
+            $sql = "SELECT id, submitMealName, submitMealInstruct, submitMealArea, submitMealVideo FROM meal";
             $result = $conn->query($sql);
 
             while ($row = $result->fetch_assoc()) {

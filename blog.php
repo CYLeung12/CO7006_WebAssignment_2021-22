@@ -22,7 +22,7 @@
     <section id="intro">
         <h1 id="heroTitle-s" class="title">Cooking Tips</h1>
         <div id="main-banner-s">
-        
+
         </div>
 
 

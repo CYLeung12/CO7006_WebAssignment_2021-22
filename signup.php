@@ -17,11 +17,7 @@ if ($password !== $passwordRepeat) {
     exit;
 }
 
-$conn = mysqli_connect('localhost', 'c2114907_admin', 'K3@onq%_;}A.', 'c2114907_meals');
-if ($conn->connect_error) {
-    echo ("DB connection failed ");
-}
-
+require 'connection.php';
 
 if ($stmt = $conn->prepare('SELECT password FROM admin WHERE username=?')) {
     $stmt->bind_param('s', $username);

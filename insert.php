@@ -5,13 +5,15 @@ $submitMealArea = $_POST['submitMealArea'];
 $submitMealVideo = $_POST['submitMealVideo'];
 
 
-$conn = mysqli_connect('localhost', 'c2114907_admin', 'K3@onq%_;}A.', 'c2114907_meals');
+
+require 'connection.php';
+
 if ($conn->connect_error) {
     echo ("DB connection failed ");
 } else {
 
 
-    $stmt = $conn->prepare("insert into submit(submitMealName, submitMealInstruct, submitMealArea, submitMealVideo) values(?, ?, ?, ?)");
+    $stmt = $conn->prepare("insert into meal (submitMealName, submitMealInstruct, submitMealArea, submitMealVideo) values(?, ?, ?, ?)");
     $stmt->bind_param("ssss", $submitMealName, $submitMealInstruct, $submitMealArea, $submitMealVideo);
     $execval = $stmt->execute();
     echo $execval;
@@ -61,9 +63,6 @@ if ($conn->connect_error) {
 
     <footer>
         <div id='footerContent' class='container'>
-            <p>
-            Website built for CO7006 - Web Systems
-            </p>
         </div>
     </footer>
 

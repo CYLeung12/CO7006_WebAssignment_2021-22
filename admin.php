@@ -39,7 +39,10 @@
             </div>
 
 
-            <div><button type="submit" name="login-btn" id="login-btn">Log in</button></div>
+            <div>
+                <button onclick="location.href='adminReg.php'" type="button" id="login-btn">Admin Reg</button>
+                <button type="submit" name="login-btn" id="login-btn">Log in</button>
+            </div>
         </form>
     </section>
 </body>

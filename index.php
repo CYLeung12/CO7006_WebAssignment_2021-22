@@ -75,9 +75,7 @@
 
     <footer>
         <div id="footerContent" class="container">
-            <p>
-                All recipe data is retrieved from <a href="https://www.themealdb.com/" target="_blank" style="color: aquamarine;">TheMealDB</a>.
-            </p>
+
         </div>
     </footer>
 
